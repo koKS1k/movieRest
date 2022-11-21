@@ -51,7 +51,7 @@
 │   │
 │   └───resources
 │          application.properties                          # Свойства проекта
-│          data1.sql                                       # Если убдрать 1, то БД будет заполнятсья данными из файла при запуске
+│          data1.sql                                       # Если убрать 1, то БД будет заполнятсья данными из файла при запуске
 │       
 │       
 └───test
@@ -59,7 +59,7 @@
         └───com
             └───example
                 └───movierest
-                        MovieRestApplicationTests.java  
+                        MovieRestApplicationTests.java    # Добавил тесты
                                  
 
 ```
