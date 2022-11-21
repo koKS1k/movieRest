@@ -46,13 +46,6 @@ public class StartConfiguration {
                                 /*date*/LocalDate.of(1962, 1, 8)
                              ),
 
-                        new Movie(
-                                /*title*/"Побег из Шоушенка",
-                                /*description*/"Бухгалтер Энди Дюфрейн обвинён в убийстве собственной жены и её любовника.",
-                                /*type*/"Полнометражный",
-                                /*genre*/"Драма",
-                                /*date*/LocalDate.of(1994, 9, 10)
-                             ),
 
                         new Movie(
                                 /*title*/"Идентификация Борна",

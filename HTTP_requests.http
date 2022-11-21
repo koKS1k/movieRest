@@ -66,3 +66,8 @@ GET http://localhost:8190/movie-api/byType?type=Сериал
 ###Проверка обработки кастомной ошибки
 GET http://localhost:8190/exception/myException
 
+
+###Получить все фильмы
+GET http://localhost:8190/movie-api/pagination?page=0&size=5
+
+

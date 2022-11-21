@@ -2,8 +2,10 @@ package com.example.movierest.services;
 
 import com.example.movierest.model.Movie;
 import com.example.movierest.repositories.MovieRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
+
 
 import java.time.LocalDate;
 import java.util.List;
@@ -39,6 +41,11 @@ public class MovieService {
 
     public void saveMovies(List<Movie> movies){
         movieRepository.saveAll(movies);
+    }
+
+    public Page<Movie> getPageMovies(Integer page, Integer size){
+
+        return movieRepository.findAll(PageRequest.of(page,size));
     }
 
 

@@ -9,6 +9,9 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 @Getter
 @Setter
@@ -17,12 +20,21 @@ import java.time.LocalDate;
 @Entity
 public class Movie {
 
+    public static final List<String> typelist = Collections.unmodifiableList(
+            new ArrayList<String>() {{
+                add("Полнометражный");
+                add("Короткометражный");
+                add("Сериал");
+            }});
+
     @Id
     @Schema(description = "Идентификатор")
     @GeneratedValue
     private Long id;
 
     @Column(nullable = false)
+    @NotBlank(message = "Название не может быть пустым")
+    @Size(min = 4, message = "Минимум 4 символа в названии")
     @Schema(description = "Название")
     private String title;
 
@@ -30,6 +42,7 @@ public class Movie {
     private String description;
 
     @Column(nullable = false)
+    @NotBlank(message = "Тип не может быть пустым")
     @Schema(description = "Тип")
     private String type;
 
@@ -41,10 +54,9 @@ public class Movie {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd", timezone = "Asia/Yekaterinburg")
     private LocalDate date;
 
-
     public Movie(String title, String description, String type, String genre, LocalDate date) {
 
-        if(type.equals("Полнометражный")||type.equals("Короткометражный")||type.equals("Сериал"))
+        if(typelist.contains(type))
             this.type = type;
         else
             throw new IllegalArgumentException("Неверно указан тип фильма");

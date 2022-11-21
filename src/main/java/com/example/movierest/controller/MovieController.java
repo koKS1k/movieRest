@@ -8,7 +8,12 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+
+import javax.validation.Valid;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -21,59 +26,78 @@ import java.util.List;
     )
 public class MovieController {
 
-    Logger logger = LoggerFactory.getLogger(MovieController.class);
-
     private final MovieService movieService;
 
     public MovieController(MovieService movieService) {
         this.movieService = movieService;
     }
 
+    @Operation(summary = "Отображение по страницам")
+    @RequestMapping(value = "/pagination", method = RequestMethod.GET)
+    public ResponseEntity<?> getPage(@RequestParam(value="size", required = false, defaultValue = "5")
+                                     Integer size,
+                                     @RequestParam(value="page", required = false, defaultValue = "0")
+                                     Integer page) {
+
+        return  ResponseEntity.ok(movieService.getPageMovies(page,size));
+    }
+
     @Operation(summary = "Получить все фильмы")
     @RequestMapping(value = "/all", method = RequestMethod.GET)
-    public List<Movie> allMovies(){
-        return  movieService.getAllMovies();
+    public ResponseEntity<?> allMovies(){
+        return  ResponseEntity.ok(movieService.getAllMovies());
     }
+
+
 
     @Operation(summary = "Получить фильм по названию")
     @RequestMapping(value = "/byTitle", method = RequestMethod.GET)
-    public Movie getByTitle(@RequestParam
-                            @Parameter(description = "Название фильма")
-                            String title){
-        return  movieService.findByTitle(title);
+    public ResponseEntity<?> getByTitle(@RequestParam
+                                        @Parameter(description = "Название фильма")
+                                        String title){
+        return  ResponseEntity.ok(movieService.findByTitle(title));
     }
 
     @Operation(summary = "Получить фильмы по типу")
     @RequestMapping(value = "/byType", method = RequestMethod.GET)
-    public List<Movie> getByType(@RequestParam
-                                 @Parameter(description = "Тип фильма")
-                                 String type){
-        return  movieService.findByType(type);
+    public ResponseEntity<?> getByType(@RequestParam
+                                       @Parameter(description = "Тип фильма")
+                                       String type){
+        return  ResponseEntity.ok(movieService.findByType(type));
     }
 
     @Operation(summary = "Получить фильмы по дате выхода")
     @RequestMapping(value = "/byDate", method = RequestMethod.GET)
-    public List<Movie> getByType(@RequestParam
-                                 @Parameter(description = "Дата премьеры")
-                                 @DateTimeFormat(pattern = "yyyy-MM-dd")
-                                 LocalDate date){
-        return  movieService.findByDate(date);
+    public ResponseEntity<?> getByDate(@RequestParam
+                                       @Parameter(description = "Дата премьеры")
+                                       @DateTimeFormat(pattern = "yyyy-MM-dd")
+                                       LocalDate date){
+        return  ResponseEntity.ok(movieService.findByDate(date));
     }
 
     @Operation(summary = "Добавить фильм")
     @RequestMapping(value = "/addMovie", method = RequestMethod.POST)
-    public void addMovie(@RequestBody
-                         @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Данные фильма в JSON формате")
-                         Movie movie){
+    public ResponseEntity<Void> saveMovie(@RequestBody
+                                          @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Данные фильма в JSON формате")
+                                          @Valid
+                                          Movie movie){
+
         movieService.saveMovie(movie);
+
+        return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
 
     @Operation(summary = "Добавить несколько фильмов")
     @RequestMapping(value = "/addMovies", method = RequestMethod.POST)
-    public void saveMovies(@RequestBody
-                           @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Данные фильма в JSON формате")
-                           List<Movie> movies) {
+    public ResponseEntity<Void> saveMovies(@RequestBody
+                                           @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Данные фильма в JSON формате")
+                                           @Valid
+                                           List<Movie> movies) {
         movieService.saveMovies(movies);
+
+        return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
+
+
 
 }
