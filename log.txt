@@ -1,145 +1,186 @@
-2022-11-14 12:00:42.333  INFO 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : Starting MovieRestApplication using Java 1.8.0_342 on KONONOV with PID 11072 (C:\Users\Кононов Артем\Desktop\JP3\movieRest\target\classes started by Кононов Артем in C:\Users\Кононов Артем\Desktop\JP3\movieRest)
-2022-11-14 12:00:42.336 DEBUG 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : Running with Spring Boot v2.7.5, Spring v5.3.23
-2022-11-14 12:00:42.337  INFO 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : No active profile set, falling back to 1 default profile: "default"
-2022-11-14 12:00:42.377  INFO 11072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-11-14 12:00:42.377  INFO 11072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-11-14 12:00:43.240  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-14 12:00:43.282  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
-2022-11-14 12:00:43.712  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8190 (http)
-2022-11-14 12:00:43.719  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-14 12:00:43.719  INFO 11072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-11-14 12:00:43.795  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-14 12:00:43.796  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1419 ms
-2022-11-14 12:00:43.914  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-11-14 12:00:44.018  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-11-14 12:00:44.027  INFO 11072 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:moviedb'
-2022-11-14 12:00:44.076 DEBUG 11072 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
-2022-11-14 12:00:44.119  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-14 12:00:44.162  INFO 11072 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-11-14 12:00:44.284  INFO 11072 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-11-14 12:00:44.375  INFO 11072 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-11-14 12:00:44.842  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-11-14 12:00:44.849  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-11-14 12:00:45.182  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-11-14 12:00:45.856  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-11-14 12:00:45.860  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2022-11-14 12:00:45.898  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8190 (http) with context path ''
-2022-11-14 12:00:45.910  INFO 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : Started MovieRestApplication in 3.895 seconds (JVM running for 4.847)
-2022-11-14 12:00:46.521  INFO 11072 --- [RMI TCP Connection(1)-192.168.1.166] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-14 12:00:46.521  INFO 11072 --- [RMI TCP Connection(1)-192.168.1.166] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-14 12:00:46.522  INFO 11072 --- [RMI TCP Connection(1)-192.168.1.166] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-11-14 12:00:54.130 DEBUG 11072 --- [http-nio-8190-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /v3/api-docs]
-2022-11-14 12:00:54.309  INFO 11072 --- [http-nio-8190-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 154 ms
-2022-11-14 12:00:54.333 DEBUG 11072 --- [http-nio-8190-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /v3/api-docs]
-2022-11-14 12:00:54.412 DEBUG 11072 --- [http-nio-8190-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /favicon.ico]
-2022-11-14 12:00:54.416 DEBUG 11072 --- [http-nio-8190-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /favicon.ico]
-2022-11-14 12:01:21.925 DEBUG 11072 --- [http-nio-8190-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /swagger-ui.html]
-2022-11-14 12:01:21.938 DEBUG 11072 --- [http-nio-8190-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /swagger-ui.html]
-2022-11-14 12:01:21.942 DEBUG 11072 --- [http-nio-8190-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /swagger-ui/index.html]
-2022-11-14 12:01:21.945 DEBUG 11072 --- [http-nio-8190-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /swagger-ui/index.html]
-2022-11-14 12:01:21.956 DEBUG 11072 --- [http-nio-8190-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /swagger-ui/swagger-ui.css]
-2022-11-14 12:01:21.958 DEBUG 11072 --- [http-nio-8190-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /swagger-ui/index.css]
-2022-11-14 12:01:21.958 DEBUG 11072 --- [http-nio-8190-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /swagger-ui/swagger-ui-standalone-preset.js]
-2022-11-14 12:01:21.958 DEBUG 11072 --- [http-nio-8190-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /swagger-ui/swagger-ui-bundle.js]
-2022-11-14 12:01:21.959 DEBUG 11072 --- [http-nio-8190-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /swagger-ui/swagger-initializer.js]
-2022-11-14 12:01:21.962 DEBUG 11072 --- [http-nio-8190-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /swagger-ui/index.css]
-2022-11-14 12:01:21.964 DEBUG 11072 --- [http-nio-8190-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /swagger-ui/swagger-ui.css]
-2022-11-14 12:01:21.967 DEBUG 11072 --- [http-nio-8190-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /swagger-ui/swagger-initializer.js]
-2022-11-14 12:01:21.969 DEBUG 11072 --- [http-nio-8190-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /swagger-ui/swagger-ui-standalone-preset.js]
-2022-11-14 12:01:21.975 DEBUG 11072 --- [http-nio-8190-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /swagger-ui/swagger-ui-bundle.js]
-2022-11-14 12:01:22.122 DEBUG 11072 --- [http-nio-8190-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /v3/api-docs/swagger-config]
-2022-11-14 12:01:22.123 DEBUG 11072 --- [http-nio-8190-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /swagger-ui/favicon-32x32.png]
-2022-11-14 12:01:22.124 DEBUG 11072 --- [http-nio-8190-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /v3/api-docs/swagger-config]
-2022-11-14 12:01:22.126 DEBUG 11072 --- [http-nio-8190-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /swagger-ui/favicon-32x32.png]
-2022-11-14 12:01:22.142 DEBUG 11072 --- [http-nio-8190-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /v3/api-docs]
-2022-11-14 12:01:22.145 DEBUG 11072 --- [http-nio-8190-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /v3/api-docs]
-2022-11-14 12:02:12.267 DEBUG 11072 --- [http-nio-8190-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /swagger-ui/index.html]
-2022-11-14 12:02:12.269 DEBUG 11072 --- [http-nio-8190-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /swagger-ui/index.html]
-2022-11-14 12:03:50.390  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2022-11-14 12:03:50.528  INFO 11072 --- [Thread-13] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-11-14 12:03:50.530  INFO 11072 --- [Thread-13] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-11-14 12:03:50.536  INFO 11072 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-11-14 12:03:50.755  WARN 11072 --- [Thread-13] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+2022-11-21 16:57:37.463  INFO 9096 --- [restartedMain] c.e.movierest.MovieRestApplication       : Starting MovieRestApplication using Java 1.8.0_342 on KONONOV with PID 9096 (C:\Users\Кононов Артем\Desktop\JP3\movieRest\target\classes started by Кононов Артем in C:\Users\Кононов Артем\Desktop\JP3\movieRest)
+2022-11-21 16:57:37.464 DEBUG 9096 --- [restartedMain] c.e.movierest.MovieRestApplication       : Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-11-21 16:57:37.465  INFO 9096 --- [restartedMain] c.e.movierest.MovieRestApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-11-21 16:57:37.497  INFO 9096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-21 16:57:37.506  INFO 9096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-21 16:57:38.223  INFO 9096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 16:57:38.263  INFO 9096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2022-11-21 16:57:38.769  INFO 9096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8190 (http)
+2022-11-21 16:57:38.775  INFO 9096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-21 16:57:38.776  INFO 9096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 16:57:38.848  INFO 9096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-21 16:57:38.848  INFO 9096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1342 ms
+2022-11-21 16:57:38.929  INFO 9096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-21 16:57:39.021  INFO 9096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-21 16:57:39.029  INFO 9096 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:moviedb'
+2022-11-21 16:57:39.115  INFO 9096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 16:57:39.147  INFO 9096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 16:57:39.239  INFO 9096 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 16:57:39.313  INFO 9096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-21 16:57:39.738  INFO 9096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 16:57:39.744  INFO 9096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 16:57:40.203  WARN 9096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 16:57:40.751  INFO 9096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-21 16:57:40.755  INFO 9096 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-11-21 16:57:40.790  INFO 9096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8190 (http) with context path ''
+2022-11-21 16:57:40.803  INFO 9096 --- [restartedMain] c.e.movierest.MovieRestApplication       : Started MovieRestApplication in 3.636 seconds (JVM running for 4.332)
+2022-11-21 16:57:41.109  INFO 9096 --- [RMI TCP Connection(1)-192.168.1.166] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 16:57:41.110  INFO 9096 --- [RMI TCP Connection(1)-192.168.1.166] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-21 16:57:41.111  INFO 9096 --- [RMI TCP Connection(1)-192.168.1.166] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-21 16:57:49.483  INFO 9096 --- [http-nio-8190-exec-1] c.e.movierest.aop.RestControllerAspect   : ==> path(s): [/pagination], method(s): [GET], arguments: 
+{
+	"size":5,
+	"page":0
+} 
+2022-11-21 16:57:49.587  INFO 9096 --- [http-nio-8190-exec-1] c.e.movierest.aop.RestControllerAspect   : <== path(s): [/pagination], method(s): [GET], retuning: 
+{
+	"headers":
+	{
+		
+	},
+	"body":
+	{
+		"content":
+		[
+			
+			{
+				"id":1,
+				"title":"Побег из Шоушенка",
+				"description":"Бухгалтер Энди Дюфрейн обвинён в убийстве собственной жены и её любовника.",
+				"type":"Полнометражный",
+				"genre":"Драма",
+				"date":"1994-09-10"
+			},
+			
+			{
+				"id":2,
+				"title":"Большой Лебовски",
+				"description":"Тихого пофигиста по ошибке принимают за богача.",
+				"type":"Полнометражный",
+				"genre":"Комедия",
+				"date":"1998-01-18"
+			},
+			
+			{
+				"id":3,
+				"title":"Самогонщики",
+				"description":"Трус,
+				 Балбес и Бывалый решают поставить на широкую ногу изготовление самогона - и снова фиаско...",
+				"type":"Короткометражный",
+				"genre":"Драма",
+				"date":"1962-01-08"
+			},
+			
+			{
+				"id":4,
+				"title":"Идентификация Борна",
+				"description":"Потерявший память герой пытается узнать свое прошлое. Начало шпионской франшизы Дага Лаймана о супербойце ЦРУ",
+				"type":"Полнометражный",
+				"genre":"Боевик",
+				"date":"2002-06-06"
+			},
+			
+			{
+				"id":5,
+				"title":"Папаши",
+				"description":"Мужчины ищут сбежавшего подростка,
+				 которого каждый считает своим сыном. Дуэт Пьера Ришара и Жерара Депардье",
+				"type":"Полнометражный",
+				"genre":"Комедия",
+				"date":"1983-11-23"
+			}
+		],
+		"pageable":
+		{
+			"sort":
+			{
+				"sorted":false,
+				"unsorted":true,
+				"empty":true
+			},
+			"pageNumber":0,
+			"pageSize":5,
+			"offset":0,
+			"unpaged":false,
+			"paged":true
+		},
+		"totalElements":21,
+		"last":false,
+		"totalPages":5,
+		"sort":
+		{
+			"sorted":false,
+			"unsorted":true,
+			"empty":true
+		},
+		"numberOfElements":5,
+		"first":true,
+		"size":5,
+		"number":0,
+		"empty":false
+	},
+	"statusCode":"OK",
+	"statusCodeValue":200
+}
+2022-11-21 16:57:55.621 ERROR 9096 --- [http-nio-8190-exec-2] c.e.m.e.CustomExceptionHandler           : Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.example.movierest.controller.MovieController.saveMovie(com.example.movierest.model.Movie): [Field error in object 'movie' on field 'title': rejected value [null]; codes [NotBlank.movie.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [movie.title,title]; arguments []; default message [title]]; default message [Название не может быть пустым]] 
+
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.example.movierest.controller.MovieController.saveMovie(com.example.movierest.model.Movie): [Field error in object 'movie' on field 'title': rejected value [null]; codes [NotBlank.movie.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [movie.title,title]; arguments []; default message [title]]; default message [Название не может быть пустым]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:141) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [tomcat-embed-core-9.0.68.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [tomcat-embed-core-9.0.68.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) [spring-boot-actuator-2.7.5.jar:2.7.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.lang.Thread.run(Thread.java:750) [na:na]
+
+2022-11-21 16:57:55.623  WARN 9096 --- [http-nio-8190-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.example.movierest.controller.MovieController.saveMovie(com.example.movierest.model.Movie): [Field error in object 'movie' on field 'title': rejected value [null]; codes [NotBlank.movie.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [movie.title,title]; arguments []; default message [title]]; default message [Название не может быть пустым]] ]
+2022-11-21 16:58:39.002  INFO 9096 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 16:58:39.214  WARN 9096 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
-2022-11-14 12:03:50.756  INFO 11072 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-11-14 12:03:50.757  INFO 11072 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-11-14 12:03:50.932  INFO 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : Starting MovieRestApplication using Java 1.8.0_342 on KONONOV with PID 11072 (C:\Users\Кононов Артем\Desktop\JP3\movieRest\target\classes started by Кононов Артем in C:\Users\Кононов Артем\Desktop\JP3\movieRest)
-2022-11-14 12:03:50.932 DEBUG 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : Running with Spring Boot v2.7.5, Spring v5.3.23
-2022-11-14 12:03:50.932  INFO 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : No active profile set, falling back to 1 default profile: "default"
-2022-11-14 12:03:51.212  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-14 12:03:51.219  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
-2022-11-14 12:03:51.309  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8190 (http)
-2022-11-14 12:03:51.309  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-14 12:03:51.309  INFO 11072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-11-14 12:03:51.322  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-14 12:03:51.322  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 388 ms
-2022-11-14 12:03:51.342  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2022-11-14 12:03:51.344  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2022-11-14 12:03:51.344  INFO 11072 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:moviedb'
-2022-11-14 12:03:51.360 DEBUG 11072 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
-2022-11-14 12:03:51.370  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-14 12:03:51.373  INFO 11072 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-11-14 12:03:51.393  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-11-14 12:03:51.394  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-11-14 12:03:51.458  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-11-14 12:03:51.721  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-11-14 12:03:51.723  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2022-11-14 12:03:51.737  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8190 (http) with context path ''
-2022-11-14 12:03:51.748  INFO 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : Started MovieRestApplication in 0.835 seconds (JVM running for 190.682)
-2022-11-14 12:03:51.765  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-11-14 12:03:53.137  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 12 class path changes (1 addition, 0 deletions, 11 modifications)
-2022-11-14 12:03:53.269  INFO 11072 --- [Thread-24] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-11-14 12:03:53.275  INFO 11072 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-11-14 12:03:53.480  WARN 11072 --- [Thread-24] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
-2022-11-14 12:03:53.481  INFO 11072 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2022-11-14 12:03:53.483  INFO 11072 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2022-11-14 12:03:53.697  INFO 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : Starting MovieRestApplication using Java 1.8.0_342 on KONONOV with PID 11072 (C:\Users\Кононов Артем\Desktop\JP3\movieRest\target\classes started by Кононов Артем in C:\Users\Кононов Артем\Desktop\JP3\movieRest)
-2022-11-14 12:03:53.697 DEBUG 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : Running with Spring Boot v2.7.5, Spring v5.3.23
-2022-11-14 12:03:53.697  INFO 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : No active profile set, falling back to 1 default profile: "default"
-2022-11-14 12:03:53.960  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-14 12:03:53.968  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
-2022-11-14 12:03:54.040  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8190 (http)
-2022-11-14 12:03:54.041  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-14 12:03:54.041  INFO 11072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-11-14 12:03:54.057  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-14 12:03:54.057  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 358 ms
-2022-11-14 12:03:54.079  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2022-11-14 12:03:54.081  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2022-11-14 12:03:54.082  INFO 11072 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:moviedb'
-2022-11-14 12:03:54.099 DEBUG 11072 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
-2022-11-14 12:03:54.108  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-14 12:03:54.112  INFO 11072 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-11-14 12:03:54.131  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-11-14 12:03:54.131  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-11-14 12:03:54.195  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-11-14 12:03:54.449  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-11-14 12:03:54.451  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2022-11-14 12:03:54.468  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8190 (http) with context path ''
-2022-11-14 12:03:54.476  INFO 11072 --- [restartedMain] c.e.movierest.MovieRestApplication       : Started MovieRestApplication in 0.799 seconds (JVM running for 193.412)
-2022-11-14 12:03:54.487  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-11-14 12:03:55.096  INFO 18464 --- [main] c.e.movierest.MovieRestApplicationTests  : Starting MovieRestApplicationTests using Java 1.8.0_342 on KONONOV with PID 18464 (started by ������� ����� in C:\Users\������� �����\Desktop\JP3\movieRest)
-2022-11-14 12:03:55.097 DEBUG 18464 --- [main] c.e.movierest.MovieRestApplicationTests  : Running with Spring Boot v2.7.5, Spring v5.3.23
-2022-11-14 12:03:55.098  INFO 18464 --- [main] c.e.movierest.MovieRestApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2022-11-14 12:03:56.011  INFO 18464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-14 12:03:56.054  INFO 18464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
-2022-11-14 12:03:56.583  INFO 18464 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-14 12:03:56.647  INFO 18464 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-11-14 12:03:56.832  INFO 18464 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-11-14 12:03:57.102  INFO 18464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-11-14 12:03:57.314  INFO 18464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-11-14 12:03:57.333  INFO 18464 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-11-14 12:03:57.926  INFO 18464 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-11-14 12:03:57.935  INFO 18464 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-11-14 12:03:58.757  WARN 18464 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-11-14 12:03:59.141  INFO 18464 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:moviedb'
-2022-11-14 12:04:00.271  INFO 18464 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2022-11-14 12:04:00.318  INFO 18464 --- [main] c.e.movierest.MovieRestApplicationTests  : Started MovieRestApplicationTests in 5.493 seconds (JVM running for 6.433)
-2022-11-14 12:04:00.578  INFO 18464 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-11-14 12:04:00.579  INFO 18464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-11-14 12:04:00.581  INFO 18464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-11-14 12:05:23.499  INFO 11072 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-11-14 12:05:23.768  WARN 11072 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
-2022-11-14 12:05:23.770  INFO 11072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2022-11-14 12:05:23.816  INFO 11072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-11-21 16:58:39.215  INFO 9096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-21 16:58:39.222  INFO 9096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
